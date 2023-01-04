@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@300;400;700;800&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Outfit:wght@300;400;600&family=Roboto:wght@700&display=swap');
+
+$darkpink: hsl(300, 43%, 22%);
+$pink: hsl(333, 80%, 67%);
+$magenta: hsl(303, 10%, 53%);
+$graymagenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+
+//   .attribution {
+//     font-size: 11px;
+//     text-align: center;
+//   }
+//   .attribution a {
+//     color: hsl(228, 45%, 44%);
+//   }
+
+*{
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+}
+
+body{
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background-size: auto, 100%;
+    background-color: $white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading{
+    display: block;
+    color: $darkpink;
+    font-weight: 700;
+    font-size: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1.4em;
+    text-align: center;
+}
+
+.heading-des{
+    position: relative;
+    margin-left: 5em;
+    margin-right: 5em;
+    color: $magenta;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 36em;
+    min-width: 19em;
+}
+
+.rates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    max-width: 700px;
+    row-gap: 20px;
+    padding-block-end: 2rem;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.stars{
+    width: 6rem;
+    min-width: 6rem;
+    height: 1.2rem;
+    background-image: url(images/icon-star.svg);
+    background-repeat: space;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.rate{
+    color: $darkpink;
+    background-color: $graymagenta;
+    border-radius: 8px;
+    margin: auto;
+    width: 85%;
+  
+    padding-left: 2rem;
+    padding-right: 2rem;
+   
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    p{
+        text-align: center;
+    }
+}
+
+.box-icon{
+    width: 60%;
+    border-radius: 50%;
+    margin-top: 2em;
+    margin-left: 3em;
+    padding: 0;
+}
+
+.box{
+    width: 100%;
+    height: 10rem;
+}
+
+.card{
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    background-color: $darkpink;
+    color: white;
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+
+.top {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.name{
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: large;
+    text-align: start;
+}
+.verified{
+    color: $pink;
+    margin-top: 0;
+    margin-left: 1rem;
+    text-align: start;
+}
+
+.message{
+    grid-column: 1/4;
+    padding: 1rem;
+    padding-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+    body{
+        background-color: pink;
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+        background-size: auto, 100%;
+    }
+    .container{
+        // max-width: unset;
+        // height: 100vh;
+        // place-content: center;
+        // grid-template-areas:
+        //     "header head"
+        //     "rate rate rate"
+        //     "card1 card1 card2 card2 card3 card3";
+        // grid-template-columns: repeat(6, 175px);
+        // row-gap: 1rem;
+
+         max-width: unset;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-rows: 3fr;
+         column-gap: 2rem;
+        width: 80%;
+    }    
+
+    header{
+        margin-top: -40rem;
+
+        .heading, .heading-des{
+            text-align: start;
+        }
+        .heading{
+            font-size: 3rem;
+            width: 50%;
+        }
+
+    .rates{
+        display: inline-block;
+        width: 3fr;
+
+    }
+    }
+    // .heading{
+    //     text-align: start;
+    //     margin-top: -10em;
+    //     margin-left: 2rem;
+    //     grid-column: 1/4;
+    //     width: 40%;
+    //     font-size: 3rem;
+    // }
+    // .heading-des{
+    //     text-align: start;
+    //     margin-left: 10rem;
+    // }
+
+
+
+}
