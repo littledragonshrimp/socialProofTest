@@ -23,10 +23,11 @@ body {
   display: block;
   color: hsl(300deg, 43%, 22%);
   font-weight: 700;
-  font-size: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
+  font-size: 3em;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 1.4em;
+  max-width: 400px;
   text-align: center;
 }
 
