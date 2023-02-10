@@ -180,7 +180,8 @@ body {
     padding-right: 3rem;
   }
   .rates .rate p {
-    width: 16rem;
+    width: 18rem;
+    font-weight: 700;
   }
   .rates .one {
     margin-left: 0rem;
