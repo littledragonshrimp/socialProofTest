@@ -163,13 +163,18 @@ body {
   }
   .heads {
     grid-area: heads;
+    margin-top: 2rem;
   }
   .heading, .heading-des {
     text-align: start;
     margin-left: 2rem;
   }
+  .heading h1, .heading-des h1 {
+    font-weight: 700;
+  }
   .rates {
     grid-area: rates;
+    margin-top: 3rem;
   }
   .rates .rate {
     background-color: hsl(300deg, 24%, 96%);

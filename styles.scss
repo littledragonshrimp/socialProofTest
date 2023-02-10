@@ -162,8 +162,8 @@ body{
 
 
 
-
-@media screen and (min-width: 1000px) {
+//desktop mode
+@media screen and (min-width: 1000px)  {
     body{
         background-color: $white;
         background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
@@ -190,15 +190,21 @@ body{
 
     .heads{
         grid-area: heads;
+        margin-top: 2rem;
     }
     .heading, .heading-des{
+  
         text-align: start;
         margin-left: 2rem;
+        h1{
+            font-weight: 700;
+        }
     }
   
 
     .rates{
         grid-area: rates;
+        margin-top: 3rem;
         .rate{
             background-color: $graymagenta;
             display: flex;
